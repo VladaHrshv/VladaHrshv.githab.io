@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Влада Хорощева - web-разработчик</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
@@ -11,7 +13,7 @@
 		<!--Меню-->
 		<nav>
 			<div class="logo">
-				
+				<p>Влада Хорошева</p>
 			</div>
 			<div class="menu">
 				<ul>
@@ -30,66 +32,72 @@
 		
 		<!--Первый блок сайта-->
 		<div class="title_container">
-			<h1>"Привет<br>Я Влада Хорошева"</h1>
-			<h4>"Фул стек разработчик"</h4>
+			<div class="title_text">
+				<h1>Привет<br>Я Влада Хорошева</h1>
+				<h4>Фул стек web-разработчик и Android-разработчик</h4>
 
-			<input type="submit" class="btn_title" value="Обо мне">
-			<input type="submit" class="btn_title" value="Мои работы">
+				<input type="submit" class="btn_title" value="Обо мне">
+				<input type="submit" class="btn_title" value="Мои работы">
+			</div>
 		</div>
 
 		<!--Втрой блок сайта-->
-		<div class="about_me_container">
-			<h2>"Обо мне"</h2>
-			<img src="путь к картинке" alt="Моя фотография">
+		<div class="about_me_container blok">
+			<h2>Обо мне</h2>
+			<img src="img/my_photo.jpg" alt="Моя фотография">
 
 			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident iusto sed velit quos distinctio dicta cum, esse fuga nemo vero, expedita, alias, libero maiores temporibus dolores voluptatum iure possimus aut.</p>
 
 			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident iusto sed velit quos distinctio dicta cum, esse fuga nemo vero, expedita, alias, libero maiores temporibus dolores voluptatum iure possimus aut.</p>
 
-			<input type="submit" class="btn_uploud" value="Скачать портфолио">
+			<div class="btn_download">
+				<img src="img/btn_icon.png" alt="">
+
+				<input type="submit" class="btn_uploud" value="Скачать портфолио">
+			</div>
 
 		</div>
 
 		<!--Трейтий блок сайта-->
-		<div class="my_skills_container">
-			<h2>"Что я умею"</h2>
+		<div class="my_skills_container blok">
+			<h2>Что я умею</h2>
 
 			<div class="skills">
 				<div class="skills_item">
-					<img src="" alt="Иконка не прогрузилась">
-					<h4>"Web-дизайнер"</h4>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Veniam quos doloremque hic, beatae inventore magni, facilis? Ab, suscipit, vero. Nemo dolorem nesciunt explicabo reiciendis dolorum nam tenetur nobis soluta doloribus.</p>
+					<img src="img/laptop.png" alt="Иконка не прогрузилась">
+					<h4>Web-дизайн</h4>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, optio numquam atque tempore. Molestiae, nemo!</p>
 				</div>
 				<div class="skills_item">
-					<img src="" alt="Иконка не прогрузилась">
-					<h4>"Web-дизайнер"</h4>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Veniam quos doloremque hic, beatae inventore magni, facilis? Ab, suscipit, vero. Nemo dolorem nesciunt explicabo reiciendis dolorum nam tenetur nobis soluta doloribus.</p>
+					<img src="img/sign.png" alt="Иконка не прогрузилась">
+					<h4>Разработка</h4>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, optio numquam atque tempore. Molestiae, nemo!</p>
 				</div>
 				<div class="skills_item">
-					<img src="" alt="Иконка не прогрузилась">
-					<h4>"Web-дизайнер"</h4>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Veniam quos doloremque hic, beatae inventore magni, facilis? Ab, suscipit, vero. Nemo dolorem nesciunt explicabo reiciendis dolorum nam tenetur nobis soluta doloribus.</p>
+					<img src="img/spaceship.png" style="height: 41px" alt="Иконка не прогрузилась">
+					<h4>CEO-Опмтимизация</h4>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, optio numquam atque tempore. Molestiae, nemo!</p>
 				</div>
 				<div class="skills_item">
-					<img src="" alt="Иконка не прогрузилась">
-					<h4>"Web-дизайнер"</h4>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Veniam quos doloremque hic, beatae inventore magni, facilis? Ab, suscipit, vero. Nemo dolorem nesciunt explicabo reiciendis dolorum nam tenetur nobis soluta doloribus.</p>
+					<img src="img/loadspeaker.png" alt="Иконка не прогрузилась">
+					<h4>Маркетинг</h4>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, optio numquam atque tempore. Molestiae, nemo!</p>
 				</div>
 			</div>
 		</div>
 
 		<!--Четвертый блок сайта-->
-		<div class="my_keys_container">
+		<div class="my_keys_container blok">
 			<h2>Кейсы</h2>
 			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, repellendus?</p>
 
 			<div class="keys_slider">
 				
 				<!--Стурктура блока для слайдера-->
-				<div class="slide_1">
+				<div class="slide_1 slide">
 					
 					<div class="picture">
-						<img src="" alt="Картинка сайта">
+						<img src="img/keys_img.png" alt="Картинка сайта">
 					</div>
 
 					<div class="slide_1_info">
@@ -102,8 +110,8 @@
 						</div>
 
 						<div class="right_info">
-							<h4>Название проекта</h4>
-							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, corporis nesciunt saepe praesentium. Doloremque similique enim tempore magnam dolore magni id vel? Similique est delectus quae omnis obcaecati ipsa debitis amet eos iste perspiciatis soluta, laudantium hic, pariatur magni unde labore id beatae ex. Quo sit consequatur iure debitis?</p>
+							<h3>Название проекта</h3>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, corporis nesciunt saepe praesentium. Doloremque similique enim tempore magnam dolore magni id vel? Similique est delectus quae omnis</p>
 						</div>
 
 					</div>
@@ -115,7 +123,7 @@
 		</div>
 
 		<!--Пятый блок сайта-->
-		<div class="cost_of_sites_container">
+		<div class="cost_of_sites_container blok">
 			<h2>Расчет стоимости</h2>
 
 			<form action="#" class="count_cost_form">
@@ -136,74 +144,76 @@
 			<div class="results_container">
 
 				<div class="timing">
-					<p>Сроки</p>
-					<p>0</p>
+					<p id="first">Сроки</p>
+					<p id="second">0</p>
 				</div>
 
 				<div class="cost">
-					<p>Стоимость</p>
-					<p>0</p>
+					<p id="third">Стоимость</p>
+					<p id="forth">0</p>
 				</div>
 
 			</div>
 		</div>
 
 		<!--Шестой блок сайта-->
-		<div class="statistica_container">
+		<div class="statistica_container blok">
 			<h2>Немного статистики</h2>
-			<div class="statistica_item">
-				<img src="" alt="Иконка не загрузилась">
-				<h3>2</h3>
-				<p>Счастливых клиентов</p>
-			</div>
+			<div class="statistica_container_items">
+				<div class="statistica_item">
+					<img src="img/smail.png" alt="Иконка не загрузилась">
+					<h2>120</h2>
+					<p>Счастливых клиентов</p>
+				</div>
 
-			<div class="statistica_item">
-				<img src="" alt="Иконка не загрузилась">
-				<h3>100</h3>
-				<p>Часов работы</p>
-			</div>
+				<div class="statistica_item">
+					<img src="img/brackets.png" alt="Иконка не загрузилась">
+					<h2>100</h2>
+					<p>Часов работы</p>
+				</div>
 
-			<div class="statistica_item">
-				<img src="" alt="Иконка не загрузилась">
-				<h3>6</h3>
-				<p>Проектов завершено</p>
-			</div>
+				<div class="statistica_item">
+					<img src="img/tick.png" alt="Иконка не загрузилась">
+					<h2>6</h2>
+					<p>Проектов завершено</p>
+				</div>
 
-			<div class="statistica_item">
-				<img src="" alt="Иконка не загрузилась">
-				<h3>1</h3>
-				<p>Наград получено</p>
+				<div class="statistica_item">
+					<img src="img/cup.png" alt="Иконка не загрузилась">
+					<h2>1</h2>
+					<p>Наград получено</p>
+				</div>
 			</div>
 		</div>
 
 		<!--Седьмой блок сайта-->
-		<div class="reviews_container">
+		<div class="reviews_container blok">
 			<h2>Отзывы</h2>
 			<div class="reviews_slaider">
 				<div class="first_review">
-					<img src="" alt="Картинка не прогрузилась">
+					<img src="img/rew_man.png" alt="Картинка не прогрузилась">
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta incidunt, repellendus praesentium, quaerat quae voluptatem possimus accusantium. Dolor eligendi earum reprehenderit impedit, omnis. Atque maxime iure voluptatum odit hic illum illo, neque, minima laboriosam expedita ratione corrupti temporibus aperiam quidem.</p>
 
-					<p>Михаил, Ген директор ПАО "Газпром"</p>
+					<p class="rew_name"><b>Михаил</b>, Ген директор ПАО "Газпром"</p>
 				</div>
 			</div>
 		</div>
 
 		<!--Восьмой блок сайта-->
-		<div class="my_contacts_container">
+		<div class="my_contacts_container blok">
 			<h2>Мои контакты</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Voluptates, quos.</p>
 			<div class="contacts">
 				<div class="contacts_item">
-					<img src="" alt="Иконка не загрузилась">
+					<img src="img/geo.png" alt="Иконка не загрузилась">
 					<p>Пермь</p>
 				</div>
 				<div class="contacts_item">
-					<img src="" alt="Иконка не загрузилась">
+					<img src="img/parcel.png" alt="Иконка не загрузилась">
 					<p>vladahoroseva85@gmail.com</p>
 				</div>
 				<div class="contacts_item">
-					<img src="" alt="Иконка не загрузилась">
+					<img src="img/phone.png" alt="Иконка не загрузилась">
 					<p>+7 999 999-99-99</p>
 				</div>
 			</div>
@@ -215,7 +225,8 @@
 					<input type="text" placeholder="Email">
 				</div>
 				<textarea name="letter" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
-				<input type="submit" value="Отправить">
+				<br>
+				<input class="letter_btn" type="submit" value="Отправить">
 			</form>
 
 			<div class="my_social_networks">

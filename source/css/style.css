@@ -1,0 +1,349 @@
+body {
+	font-family: Arial, san-serif;
+	width: 100%;
+}
+
+.blok {
+	width: 100%;
+	height: 100vh;
+	color: #2c384a;
+	padding: 3%;
+	text-align: center;
+}
+
+/*Хэдер, меню*/
+nav{
+	width: 100%;
+	height: 10vh;
+	background: #344051;
+}
+
+h2{
+	margin-top: 3%;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	color: #2c384a;
+}
+
+h3{
+	font-size: 16px;
+	font-weight: bold;
+	text-align: left;
+	color: #2c384a;
+}
+
+h4 {
+	margin-bottom: 15%;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	color: #cf7600;
+}
+
+.logo {
+	color: #fff;
+	font-size: 28px;
+	line-height: 60px;
+	margin-left: 15%;
+	float: left;
+}
+
+.menu {
+	float: left;
+	padding-left: 20%;
+}
+
+
+.menu li{
+	float: left;
+	line-height: 60px;
+	color: #fff;
+	margin-right: 40px;
+	text-transform: uppercase;
+}
+
+/*Первый контейнер*/
+
+.title_container {
+	width: 100%;
+	height: 90vh;
+	background: url("../img/girl.png") 80% bottom/250px no-repeat,url("../img/bg.jpg") center/cover no-repeat;
+}
+
+.title_text {
+	float: left;
+	margin: 15% 0 0 15%;
+	color: #2c384a;
+	text-align: center;
+}
+
+.title_text h1 {
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.title_text h4 {
+	margin-top: 40px;
+	font-size: 22px;
+	color: #2c384a;
+}
+
+.title_text input{
+	height: 40px;
+	background: none;
+	color: #2c384a;
+	border: solid 2px #2c384a;
+	border-radius: 5px;
+	padding: 0px 15px;
+	font-size: 18px;
+	margin: 48px 14px 0px 14px;
+}
+
+/*Второй блок*/
+
+
+/*Не могу отобразить псевдоэлемент*/
+.about_me_container h2::after {
+	display: block;
+	width: 50px;
+	height: 3px;
+	background: #d17700;
+}
+
+.about_me_container>img {
+	margin: 3% 0px 3% 0px;
+	width: 200px;
+	height: 200px;
+	border: solid 1px #ff1;
+	border-radius: 50% 50%;
+}
+
+.about_me_container p {
+	text-align: left;
+	font-size: 16px;
+	margin: 1% 25% 2% 25%;
+}
+
+.btn_download img{
+	float: left;
+}
+
+.btn_download input{
+	float: right;
+}
+
+.btn_download {
+	margin: auto;
+	width: 170px;
+	height: 40px;
+	border: solid 2px #2c384a;
+	padding: 10px 10px;
+	border-radius: 15px;
+}
+
+/*Трейтий блок*/
+
+.my_skills_container {
+	background: url("../img/bg_3.jpg") center/cover no-repeat;
+}
+.skills{
+	margin: 10% 0% 0% 0%;
+	display: flex;
+	justify-content: space-between;
+}
+.skills img {
+	margin-bottom: 15%;
+}
+.skills_item {
+	padding: 10px;
+	font-size: 16px;
+}
+
+/*Четвертый блок*/
+.my_keys_container {
+	height: 120vh;
+}
+.my_keys_container>p {
+	margin: 3% 0%;
+}
+.keys_slider {
+	text-align: center;
+}
+.slide {
+	margin: 0% 20%;
+	text-align: center;
+	width: 60%;
+	height: 30%;
+}
+
+.picture img{
+	width: 100%;
+	height: 100%;
+}
+.slide_1_info {
+	margin-top: 3%;
+	text-align: center;
+}
+
+.slide_1_info p{
+	line-height: 20px;
+	text-align: left;
+}
+.left_info {
+	float: left;
+	width: 20%;
+}
+.left_info a{
+	float: left;
+}
+.right_info {
+	float: right;
+	width: 60%;
+}
+.slide_1_info input {
+	margin-top: 3%;
+	margin-left: -10%;
+	color: #fff;
+	background: #63b5ae;
+	border-radius: 7px;
+	padding: 10px 15px;
+}
+
+/*Пятый блок*/
+.cost_of_sites_container {
+	padding: 0% 25%;
+}
+.count_cost_form {
+	margin-top: 10%;
+	text-align: left;
+	width: 100%;
+}
+
+.results_container {
+	text-align: left;
+	width: 100%;
+}
+
+.count_cost_form legend{
+	font-size: 20px;
+	font-weight: 600;
+	color: #2c384a;
+	line-height: 35px;
+	text-transform: uppercase;
+}
+
+.count_cost_form select{
+	margin-bottom: 5%;
+	width: 100%;
+	height: 40px;
+	background: #eee;
+}
+.timing {
+	font-weight: bold;
+	margin-top: 3%;
+	display: flex;
+	justify-content: space-between;
+}
+.cost {
+	font-weight: bold;
+	margin-top: 3%;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*Шестой блок*/
+
+.statistica_container {
+	height: 70vh;
+	background: url("../img/bg_6.png") center/cover no-repeat;
+}
+
+.statistica_container_items {
+	display: flex;
+	justify-content: space-between;
+}
+
+.statistica_item {
+	margin-top: 10%;
+}
+.statistica_item h2{
+	margin: 10% 0%;
+}
+
+/*Седьмой блок*/
+.reviews_container {
+	height: 70vh;
+}
+.reviews_container img {
+	margin: 3% 0%;
+}
+
+.reviews_slaider {
+	margin: 0% 25%;
+}
+.rew_name {
+	margin-top: 8%;
+}
+
+/*Восьмой блок*/
+.my_contacts_container {
+	height: 100vh;
+	background: url("../img/bg_cont.jpg") center/cover no-repeat;
+	color: #fff;
+}
+
+.my_contacts_container  h2{
+	color: #fff;
+	margin-bottom: 5% ;
+}
+
+.contacts {
+	margin: 3% 30%;
+	display: flex;
+	justify-content: space-between;
+}
+.contacts img {
+	margin-bottom: 5%;
+}
+
+.form_letter legend {
+	text-transform: uppercase;
+	margin-bottom: 2%;
+	text-align: center;
+}
+.name_and_email_container input {
+	background: #fff;
+	height: 30px;
+	width: 300px;
+	padding: 5px 15px;
+	margin-bottom: 1%; 
+}
+
+.form_letter textarea {
+	background: #fff;
+	height: 90px;
+	width: 600px;
+	padding: 5px 15px;
+	margin-bottom: 1%; 
+}
+
+.letter_btn {
+	color: #fff;
+	margin: auto;
+	width: 170px;
+	height: 40px;
+	border: solid 2px #fff;
+	padding: 10px 10px;
+	border-radius: 10px;
+}
+
+footer {
+	text-align: center;
+	background: #2c384a;
+	height: 6vh;
+	color: #fff;
+}
+footer p{
+	padding-top: 1%;
+}
