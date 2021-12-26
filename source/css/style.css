@@ -11,19 +11,21 @@ body {
 	text-align: center;
 }
 
-/*Хэдер, меню*/
-nav{
-	width: 100%;
-	height: 10vh;
-	background: #344051;
-}
-
 h2{
 	margin-top: 3%;
 	font-size: 40px;
 	font-weight: bold;
 	text-align: center;
 	color: #2c384a;
+}
+h2::after {
+	content: "";
+	margin: 2% auto 0 auto;
+	display: block;
+	width: 80px;
+	height: 5px;
+	background: #d17700;
+}
 }
 
 h3{
@@ -41,12 +43,26 @@ h4 {
 	color: #cf7600;
 }
 
+
+/*Хэдер, меню*/
+
+nav{
+	position: fixed;
+	width: 100%;
+	height: 10vh;
+	background: #344051;
+	z-index: 1000;
+}
+
 .logo {
 	color: #fff;
 	font-size: 28px;
 	line-height: 60px;
 	margin-left: 15%;
 	float: left;
+	-webkit-animation: comming 2s ease;
+	-o-animation: comming 2s ease;
+	animation: comming 2s ease;
 }
 
 .menu {
@@ -61,13 +77,72 @@ h4 {
 	color: #fff;
 	margin-right: 40px;
 	text-transform: uppercase;
+	-webkit-animation: topshift ease 0.4s forwards;
+	-o-animation: topshift ease 0.4s forwards;
+	animation: topshift ease 0.4s forwards;
+	opacity: 0;
+}
+
+.menu li:nth-child(2) {
+	animation-delay: 0.4s;
+}
+.menu li:nth-child(3) {
+	animation-delay: 0.8s;
+}
+.menu li:nth-child(4) {
+	animation-delay: 1.2s;
+}
+.menu li:nth-child(5) {
+	animation-delay: 1.6s;
+}
+.menu li:nth-child(6) {
+	animation-delay: 2s;
+}
+
+.menu li a{
+	transition: all 0.1s;
+	color: white;
+	transform: scale(1);
+	display: inline-block;
+}
+.menu li a:visited{
+	color: white;
+}
+.menu li a:hover{
+	color: #d17700;
+}
+
+.menu li a:active{
+	transform: scale(1.1);
+}
+
+@keyframes comming {
+	from{
+		opacity: 0;
+	}
+
+	to {
+		opacity: 100%;
+	}
+}
+
+@keyframes topshift{
+	from {
+		opacity: 0;
+		margin-top: -80px;
+	}
+
+	to {
+		opacity: 1;
+		margin-top: 0px;
+	}
 }
 
 /*Первый контейнер*/
 
 .title_container {
 	width: 100%;
-	height: 90vh;
+	height: 100vh;
 	background: url("../img/girl.png") 80% bottom/250px no-repeat,url("../img/bg.jpg") center/cover no-repeat;
 }
 
@@ -75,7 +150,15 @@ h4 {
 	float: left;
 	margin: 15% 0 0 15%;
 	color: #2c384a;
+	opacity: 0;
 	text-align: center;
+	animation: titlemove 1s ease forwards;
+	-o-animation: titlemove ease 1s forwards;
+	animation: titlemove ease 1s forwards;
+
+	animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+	-o-animation-delay: 2s;
 }
 
 .title_text h1 {
@@ -100,16 +183,33 @@ h4 {
 	margin: 48px 14px 0px 14px;
 }
 
-/*Второй блок*/
+.title_container input{
+	transition: all 0.2s;
+	transform: scale(1);
 
-
-/*Не могу отобразить псевдоэлемент*/
-.about_me_container h2::after {
-	display: block;
-	width: 50px;
-	height: 3px;
-	background: #d17700;
 }
+
+.title_container input:hover{
+	background: #344051;
+	color: white;
+}
+
+.title_container input:active{
+	transform: scale(1.1);
+}
+
+@keyframes titlemove{
+	from {
+		opacity: 0;
+		margin-left: -500px;
+	}
+
+	to {
+		opacity: 1;
+		margin-left: 15%;
+	}
+}
+/*Второй блок*/
 
 .about_me_container>img {
 	margin: 3% 0px 3% 0px;
@@ -124,6 +224,16 @@ h4 {
 	font-size: 16px;
 	margin: 1% 25% 2% 25%;
 }
+
+/* Хотела загрузить псевдоэлемент before 
+ с background-image: url("../img/btn_icon.png");
+ Но, как я поняла, для input псевдоэлемент назначить нельзя
+ Как в этом случае поступать - не знаю
+ Потому что в коде, который у меня на данный момент
+ Текст окрашивается в белый только при наведении на саму кнопку, 
+ а не на блок в котором она находиться.
+ При наведении на блок, вне ссылки, текст темный.
+ Если написать color: white; для hover у btn_download - эффекта ноль */
 
 .btn_download img{
 	float: left;
@@ -142,10 +252,29 @@ h4 {
 	border-radius: 15px;
 }
 
+.btn_download{
+	transition: all 0.2s;
+	transform: scale(1);
+
+}
+
+.btn_download:hover{
+	background: #344051;
+}
+
+.btn_download input:hover{
+	color: #fff;
+}
+
+.btn_download:active{
+	transform: scale(1.1);
+}
+
 /*Трейтий блок*/
 
 .my_skills_container {
 	background: url("../img/bg_3.jpg") center/cover no-repeat;
+	background-attachment: fixed;
 }
 .skills{
 	margin: 10% 0% 0% 0%;
@@ -210,9 +339,25 @@ h4 {
 	padding: 10px 15px;
 }
 
+.slide_1_info input {
+	transition: all 0.2s;
+	transform: scale(1);
+}
+
+.slide_1_info input:hover{
+	background: #42938c;
+}
+
+.slide_1_info input:active{
+	transform: scale(1.1);
+}
+
 /*Пятый блок*/
 .cost_of_sites_container {
 	padding: 0% 25%;
+}
+.cost_of_sites_container h2::after {
+	display: none;
 }
 .count_cost_form {
 	margin-top: 10%;
@@ -257,6 +402,7 @@ h4 {
 .statistica_container {
 	height: 70vh;
 	background: url("../img/bg_6.png") center/cover no-repeat;
+	background-attachment: fixed;
 }
 
 .statistica_container_items {
@@ -270,7 +416,9 @@ h4 {
 .statistica_item h2{
 	margin: 10% 0%;
 }
-
+.statistica_item h2::after{
+	display: none;
+}
 /*Седьмой блок*/
 .reviews_container {
 	height: 70vh;
@@ -281,9 +429,35 @@ h4 {
 
 .reviews_slaider {
 	margin: 0% 25%;
+	opacity: 0;
 }
 .rew_name {
 	margin-top: 8%;
+}
+
+/* Хотела, чтобы этот эффект происходил при первом скроллинге, 
+но не знаю, можно ли это сделать без js. В интернете не нашла.
+*/
+.reviews_slaider {
+	animation: rewmove 1s ease forwards;
+	-o-animation: rewmove ease 1s forwards;
+	animation: rewmove ease 1s forwards;
+
+	animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+	-o-animation-delay: 2s;
+}
+
+@keyframes rewmove{
+	from {
+		opacity: 0;
+		margin-left: -500px;
+	}
+
+	to {
+		opacity: 1;
+		margin-left: 25%;
+	}
 }
 
 /*Восьмой блок*/
@@ -292,7 +466,14 @@ h4 {
 	background: url("../img/bg_cont.jpg") center/cover no-repeat;
 	color: #fff;
 }
+.contacts_item img{
+	transition: all 0.2s;
+	transform: scale(1);
+}
 
+.contacts_item img:hover{
+	transform: scale(1.2);
+} 
 .my_contacts_container  h2{
 	color: #fff;
 	margin-bottom: 5% ;
@@ -319,7 +500,12 @@ h4 {
 	padding: 5px 15px;
 	margin-bottom: 1%; 
 }
-
+.name_and_email_container input:focus {
+	box-shadow: 0px 3px 20px 2px #ccc;
+}
+.form_letter textarea:focus{
+	box-shadow: 0px 3px 20px 2px #ccc;
+}
 .form_letter textarea {
 	background: #fff;
 	height: 90px;
@@ -338,6 +524,19 @@ h4 {
 	border-radius: 10px;
 }
 
+.letter_btn {
+	transition: all 0.2s;
+	transform: scale(1);
+}
+
+.letter_btn:hover{
+	background: #fff;
+	color: #2c384a;
+}
+
+.letter_btn:active{
+	transform: scale(1.1);
+}
 footer {
 	text-align: center;
 	background: #2c384a;
