@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Влада Хорощева - web-разработчик</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style_loader.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,18 +22,47 @@
 
 		<!--Меню-->
 		<nav>
-			<div class="logo">
-				<p>Влада Хорошева</p>
-			</div>
-			<div class="menu">
-				<ul>
-					<li><a href="#">Обо мне</a></li>
-					<li><a href="#">Услуги</a></li>
-					<li><a href="#">Кейсы</a></li>
-					<li><a href="#">Прайс</a></li>
-					<li><a href="#">Отзывы</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-7 col-xxl-2 col-lg-3">
+						<div class="logo">
+							<p>Влада Хорошева</p>
+						</div>
+					</div>
+
+					<div class=" px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1
+					d-none d-lg-block">
+						<div class="menu">
+							<ul>
+								<li><a href="#">Обо мне</a></li>
+								<li><a href="#">Услуги</a></li>
+								<li><a href="#">Кейсы</a></li>
+								<li><a href="#">Прайс</a></li>
+								<li><a href="#">Отзывы</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-3 d-flex d-lg-none flex-column justify-content-center align-items-start">
+						<div class="dropdown">
+						  <a class="btn btn-outline-secondary white_btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+						    Навигация
+						  </a>
+
+						  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						  	<li><a class="dropdown-item" href="#">Обо мне</a></li>
+							<li><a class="dropdown-item" href="#">Услуги</a></li>
+							<li><a class="dropdown-item" href="#">Кейсы</a></li>
+							<li><a class="dropdown-item" href="#">Прайс</a></li>
+							<li><a class="dropdown-item" href="#">Отзывы</a></li>
+							<li><a class="dropdown-item" href="#">Контакты</a></li>
+						  </ul>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</nav>
 	</header>
@@ -41,12 +71,18 @@
 		
 		<!--Первый блок сайта-->
 		<div class="title_container">
-			<div class="title_text">
-				<h1>Привет<br>Я Влада Хорошева</h1>
-				<h4>Фул стек web-разработчик и Android-разработчик</h4>
+			<div class="container h-100">
+				<div class="row h-100 align-items-center">
+					<div class="col-lg-6 mt-5 pt-5">
+						<div class="title_text pt-5">
+							<h1>Привет<br>Я Влада Хорошева</h1>
+							<h4>Фул стек web-разработчик и Android-разработчик</h4>
 
-				<input type="submit" class="btn_title" value="Обо мне">
-				<input type="submit" class="btn_title" value="Мои работы">
+							<input type="submit" class="btn_title" value="Обо мне">
+							<input type="submit" class="btn_title" value="Мои работы">
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -259,7 +295,7 @@
 </body>
 </html>
 
-<!-- Скрипт для прелоадера -->
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 <script>
   window.onload = function () {
     document.body.classList.add('loaded_hiding');

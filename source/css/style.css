@@ -56,9 +56,8 @@ nav{
 
 .logo {
 	color: #fff;
-	font-size: 28px;
+	font-size: 24px;
 	line-height: 60px;
-	margin-left: 15%;
 	float: left;
 	-webkit-animation: comming 2s ease;
 	-o-animation: comming 2s ease;
@@ -67,7 +66,6 @@ nav{
 
 .menu {
 	float: left;
-	padding-left: 20%;
 }
 
 
@@ -102,8 +100,10 @@ nav{
 .menu li a{
 	transition: all 0.1s;
 	color: white;
+	font-size: 14px;
 	transform: scale(1);
 	display: inline-block;
+	text-decoration: none;
 }
 .menu li a:visited{
 	color: white;
@@ -147,11 +147,11 @@ nav{
 }
 
 .title_text {
+	width: 100%;
 	float: left;
-	margin: 15% 0 0 15%;
+	text-align: center;
 	color: #2c384a;
 	opacity: 0;
-	text-align: center;
 	animation: titlemove 1s ease forwards;
 	-o-animation: titlemove ease 1s forwards;
 	animation: titlemove ease 1s forwards;
@@ -162,7 +162,7 @@ nav{
 }
 
 .title_text h1 {
-	font-size: 60px;
+	font-size: 55px;
 	font-weight: bold;
 }
 
@@ -198,6 +198,32 @@ nav{
 	transform: scale(1.1);
 }
 
+@media (max-width: 991px) {
+	.title_text h1,
+	.title_text h4,
+	.title_text input{
+		color: white;
+		position: relative;
+		z-index: 3;
+	}
+	.title_text input{
+		border: solid 2px #fff;
+	}
+
+	.title_container {
+		position: relative;
+	}
+	.title_container:after {
+		content: "";
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		position: absolute;
+		background: rgba(0, 0, 0, 0.4);
+	}
+}
+
 @keyframes titlemove{
 	from {
 		opacity: 0;
@@ -206,9 +232,11 @@ nav{
 
 	to {
 		opacity: 1;
-		margin-left: 15%;
+		margin-left: 0px;
 	}
 }
+
+
 /*Второй блок*/
 
 .about_me_container>img {
@@ -546,3 +574,8 @@ footer {
 footer p{
 	padding-top: 1%;
 }
+
+
+/* Кнопка для навигационного меню */
+.white_btn:visited {
+	color: white;
